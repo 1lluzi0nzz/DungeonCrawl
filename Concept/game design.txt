@@ -1,0 +1,166 @@
+Bens notes on the potential design of the game
+-------------------------------------------------
+
+Ok well as we approach our goal of getting a functioning game, we
+must ask ourselves how we plan on approaching the combat system of the game.
+(as a dungeon crawler is about 99% combat)
+
+Seeing as this area of the games design is lacking i have taken the 
+liberty of creating a system of combat modeled from other videos games. 
+This system should reward the player for taking risks while keeping the
+threat of death alive.
+
+I'll focus now on the four main components to the games combat
+that I think we should include.
+
+1. Player stats
+2. Enemies
+3. Player controls
+4. Items
+
+----------------
+1. Player Stats
+----------------
+
+The game is going to revolve around your player being able to do different
+things bc of stats, while still using minimal keyboard controls.
+
+Basically your general rpg/moba stats
+There is starting stats which are: Your attack stat - 10 hp dmg on hit,
+			           Your Max Hp Stat - 100 Hp on start,
+				   Your block stat -  75% dmg
+				   Your spd stat - idk your the programmer but its a changeable stat and there is a sprint which ill discuss later
+				   Your max stamina stat - 100 stamina
+				   your stamina regen stat - 5/second
+Then there will be special stats or abilities gained from items which will
+be discussed later.
+
+-------------------
+2. Enemies
+-------------------
+
+enemies will also retain stats but they are much simpler.
+the only stats the enemies have are -  hp, attack dmg, mvnt spd, and one single enemie has the shield property(maybe idk)
+
+Two enemies
+
+Skeletors 
+
+- main enemies
+- 4 different tiers to the skeletors with different stats
+- Copper, Silver, Ruby, Diamond
+- each has a varying chance of dropping an item (60% copper, 30% silver, 10% ruby, 100% diamond)
+- Why the 100%? well diamonds are kind of a luxury, only three of them spawn, which ill discuss later when we get to items but you can only have 6, 
+ so if only 3 diamonds spawn you kinda want to get that dank tier 4 gear.
+-tiers always drop the same tier of item, copper to copper and diamond to diamond
+-enemies also have a 50% chance across all tiers of dropping a heart which restores
+ hp at varying levels based on tier (5 hp, 10 hp, 25 hp, 50 hp)
+- The skeletors of all tiers only have one type of attack
+
+Copper stats
+-20 hp, 5 dmg on hit, do the spd nibba, no shield, 66.6% spawn chance
+
+silver
+-40 hp, 10 dmg on hit, spd nibba, no shield, 25% spawn chance
+
+ruby
+-75 hp, 20 dmg on hit, spd nibba, no shield, 10% spawn chance
+
+Diamond
+- 100 Hp, 25 dmg on hit, spd nibba (all these should be the same spd),
+  again only three spawn, just choose them somewhere near the final boss
+
+
+
+
+The Final Boss
+
+-Hardest Enemy (duh!)
+- 2 attacks; 1 melee with the flail (FREIDE bring me muh flail), and a 
+  magical light ball attack (i already made the animation so fuck off)
+-Both attacks will be used according to the players situation
+- if the player enters an area near the moth he will use the flail
+-if he is not the ranged will begin charging (it has a charge up time of three seconds but can be changed to longer)
+- the ranged does the big dmg and stuns the player for 1 second so dont get hit by it
+- if a ranged attack is being charged and the player reenters the melee range
+  the attack will continue to charge and fire
+- there will be a cooldown time before it starts charging again if you are
+  still outside of the melee range
+- throughout the fight 4 hearts will appear in the corners of the room, 1 for each of the tier type of heart
+- if you go for one of the hearts the ranged attack will go off and you will need to dodge
+- The mothra will not move its position (idk unless you want it to)
+
+Moth Knight stats
+
+Hp: 200-300
+Melee attack dmg on hit: 10-15 dmg
+Ranged attack dmg on hit: 30-40 dmg (it does the deeps)
+			  also stuns player from being able to
+		          move for 1 second
+
+Basically the boss wont be hard, the challenge for it will come 
+with making sure you got enough dank shit before you came to fight him
+
+
+-----------------
+Player controls
+-----------------
+
+    w            E - Attack
+  a s d          Q - Block
+    |            Shift  - Sprint (idk 3% increase, drains stamina too)
+    v            Tab - Minimap?
+   Move          
+
+         Space - Items Menu
+	 Enter - Activate/equip/talk/action
+
+Ez Pz nice and simple
+
+
+---------
+Items
+---------
+
+Ok the big fun one
+jk
+this is gonna be the harder part of programming
+but im not hard set on all 12
+and we would probably have to balance some stuff (of course were also gonna have to balance the player and enemies stats anyways so its playable)
+anyways heres the 12 items their stat and the different stats at each tier
+
+Clothes                  Tiers 
+---------           C    S   R   D
+Cloak of Iron C-D (+10, 25, 50, 100 Max Hp)
+Boots of Agility C-D (+3%,6%,12%, 25% mvmnt spd)
+Shield of Tenacity C-D (+2%, 5%, 10%, 20% dmg resist)
+Scorching Pendant C-D (2,4,6,8 dmg/sec to nearby enemies) (basically a sunfire cape)
+Ring of Rejuvination C-D (5,10,15,20 Hp regen/ 5 sec
+Guantlets of Endurance C-D (+5%, 15%, 20%, 30% stamina regen)
+
+Weapons
+---------
+Dawnsbane C-D (+5, 10, 20, 30 dmg on hit)
+Clandestine Judgement C-D (5, 10, 15, 20 dmg left on the ground as an AOE bomb that explodes after 1-2 seconds)
+Hunters Mark C-D (weapon has a ranged property now that attacks in varrying ranges based on tier, in a cone shape)
+LifeLeecher C-D (+2, 4, 8, 12 hp on hit)
+Eternal Flame D only (come back to life death, extinguishes the flame)
+Corrupting Dagger C-D (2%, 8%, 15%, 20% chance to turn a skeletor friendly for 10 seconds)(so basically the first attack on an enemy triggers this effect
+											    and it cant trigger again, so if it happens it turns green right away and starts fighting for you
+		not super hard set on this last one bc it will be a bitch                    , if it doesnt it will never happen to that specific skeletor)
+
+
+So yeah those are the items... and basically that would be all there is to the game
+you just run around killing shit and get dank gear and then you try to fight the boss.		 						 	  
+
+what we still need drawing wise:
+
+-well most of the animations for attacks
+ and a blocking animation for the hero, but let me do that
+ bc i had an idea for it
+-I need to draw the hermit, and his chat bubbles for the mini in game tutorial
+- uhmm Idk what you guys want to do with sound and sfx but ill leave that one
+  up to you guys and ill help however i can with it when we decide what we want to do
+  (i mean anything on here im willing to discuss, but i mean, what i have here is a game, that will
+   function for the most part with some tweaking)
+ 

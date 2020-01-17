@@ -1,0 +1,16 @@
+Light hand
+|||                (back and forth     
+vvv                  between all three)
+light hand 2 -> light hand 2
+|||
+vvv
+arm extended 1 -> arm extended 2  (back and forth)
+|||
+vvv
+arm red shit 1 -> arm red shit 2   (back and Forth)
+
+*** all so far shouldve been about 2 seconds worth of animation
+ 
+cycle through light balls 1,2,3
+
+but start the ball over his hand for 1 sec before releasing it

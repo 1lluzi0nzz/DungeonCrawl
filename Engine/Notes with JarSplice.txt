@@ -1,0 +1,15 @@
+1. File -> Export -> Full Jar File, not the Runnable
+
+2. Put main class in
+
+3. Add the Game.jar
+
+4. Add the jars: jogg, jorbis and slick FROM slick folder
+
+5. Add the lwjgl jar from the lwjgl folder
+
+6. Natives from the lwjgl folder
+
+7. Create Fat Jar
+
+prereqpackage.Engine is the main class
